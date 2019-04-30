@@ -1,1 +1,51 @@
 @charset "utf-8";
+
+@font-face {
+
+    font-family: HeaderFont;
+    src: url(NunitoSans-Regular.ttf);
+
+}
+
+header {
+
+    font-family: HeaderFont;
+
+}
+
+ul#nav {
+
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: .75em;
+    word-spacing: 2em;
+
+}
+
+nav>ul#nav>li {
+
+    display: inline;
+
+}
+
+ul#imageSlide li {
+
+    display: inline;
+
+}
+
+ul#imageslide {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+
+ul li img {
+
+    height: 19em;
+    text-align: center;
+
+}
