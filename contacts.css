@@ -5,6 +5,10 @@ h1 {
     margin: 0 auto;
 }
 
+section {
+border-style: none;
+}
+
 p#map {
     text-align: center;
 }
