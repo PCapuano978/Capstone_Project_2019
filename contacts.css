@@ -54,6 +54,7 @@ input#username {
  section#paySection form#payment fieldset#cards {
     display: block;
     clear: left;
+    border: none;
  }
  
  section#paySection p#footnote {
@@ -72,7 +73,10 @@ input#username {
  }
  
  form#payment fieldset {
-    border: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
     padding-left: 20em;
     font-size: 20px;
     font-family: 'Nunito Sans', sans-serif;
@@ -80,14 +84,14 @@ input#username {
  
  
  form#payment fieldset#cards label:first-of-type {
-    text-align: right;
-    margin-left: -450px;
+    text-align: center;
+    /* margin-left: -450px; */
+    
  }
  
  form#payment legend {
     font-size: 1.3em;
     padding: 8px;
-    width: 80%;
     text-align: left;
     margin-left: 100px;
     margin-bottom: 20px;
@@ -105,7 +109,6 @@ input#username {
     margin-bottom: 10px;
     margin-right: 5px;
     width: 180px;
-    text-align: right;
     color: rgb(57, 44, 28);
  }
  
@@ -113,7 +116,6 @@ input#username {
  form#payment input, form#payment select {
     display: block;
     float: left;
-    box-shadow: 0px 0px 15px white;
  }
  
 
@@ -127,7 +129,6 @@ input#username {
  form#payment fieldset#cards img {
     display: inline-block;
     margin-left: 5px;
-    box-shadow: 0px 0px 10px rgb(124, 92, 54);
  }
  
  
@@ -140,7 +141,7 @@ input#username {
  
  form#payment fieldset#cards {
     text-align: left;
-    margin-left: 100px;
+    padding-left: 0;
  }
  
  form#payment span {
@@ -154,9 +155,12 @@ input#username {
     display: block;
     width: 180px;
     height: 35px;
-    margin: 15px 0px 10px 200px;
-    background-color: rgba(255, 140, 0, 0.8);
+    text-align: center;
+    margin-left: 530px;
+    background-color: #F39323;
     font-size: 1.3em;
     border-radius: 10px;
     float: none;
+    border-color: #F39323;
+    font-family: 'Nunito Sans', sans-serif;
  }
