@@ -227,14 +227,15 @@ footer p {
 
     div img#avionics {
 
+        float: left;
         width: 33%;
+        margin-left: 5em;
 
     }
 
     div img#logo {
 
-        width: 33%;
-        margin: 1em auto;
+        display: none;
 
     }
 
@@ -257,15 +258,24 @@ footer p {
 
     div ul {
 
-        font-size: 1.25em;
-        word-spacing: 5em;
+        list-style: none;
+        display: block;
+        justify-content: space-around;
+
+    }
+
+    div ul li a {
+
+        font-size: 1.5em;
+        padding: .8em .4em;
         font-family: lightFont;
+        word-spacing: 1em;
         color: gray;
         text-decoration: none;
         font-weight: bold;
-        text-shadow:  rgb(0, 0, 0) 1px 1px;
-        float: right;
-        clear: both;
+        text-shadow: rgb(0, 0, 0) 1px 1px;
+        list-style: none;
+        float: left;
     
     }
     
@@ -301,7 +311,7 @@ footer p {
     section ul#imageSlide div#left {
 
         position: absolute;
-        top: 0%;
+        top: 30%;
         right: 77%;
         font-size: 2em;
 
