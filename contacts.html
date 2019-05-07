@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,97 +10,126 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="contacts.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
-    
 </head>
 
 <body>
     <header>
-            <header>
-                <div>
-                    <img src="06. AvionicsDrone Electronics.png" alt="">
-                    <img src="07_WM-Logo-Grey.png" alt="">
-                </div>
-                <nav>
-                    <ul id="nav">
-                        <li>
-                            <a href="#index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacts</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                    </ul>
-                </nav>
-    <section id="paySection">
-        <h1>Payment Form</h1>
-        <form id="payment" name="payment" method="post" action="co_temp.html">
-            <fieldset id="creditcard">
-                <legend>Credit Information</legend>
-                <label for="cardName">Name*</label>
-                <input name="cardName" id="cardName" required type="text" />
-                <fieldset id="cards">
-                    <label class="cardLabel">Credit Card*</label>
-                    <label class="cardLabel">
-                        <input name="credit" value="amex" type="radio" required />
-                        <img src="co_amex.png" alt="American Express" />
-                    </label>
-                    <label class="cardLabel">
-                        <input name="credit" value="discover" type="radio" />
-                        <img src="co_discover.png" alt="Discover" />
-                    </label>
-                    <label class="cardLabel">
-                        <input name="credit" value="master" type="radio" />
-                        <img src="co_master.png" alt="MasterCard" />
-                    </label>
-                    <label class="cardLabel">
-                        <input name="credit" value="visa" type="radio" />
-                        <img src="co_visa.png" alt="Visa" />
-                    </label>
-                </fieldset>
-            <label for="cardNumber">Credit Card Number*</label>
-            <input name="cardNumber" id="cardNumber" required type="text" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+        <header>
+            <div>
+                <img src="06. AvionicsDrone Electronics.png" alt="">
+                <img src="07_WM-Logo-Grey.png" alt="">
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li>
+                        <a href="#index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="paySection">
+                <h1>Payment Form</h1>
+                <form id="payment" name="payment" method="post" action="co_temp.html">
+                    <fieldset id="creditcard">
+                        <legend>Credit Information</legend>
+                        <label for="cardName">Name*</label>
+                        <input name="cardName" id="cardName" required type="text" />
+                        <fieldset id="cards">
+                            <label class="cardLabel">Credit Card*</label>
+                            <label class="cardLabel">
+                                <input name="credit" value="amex" type="radio" required />
+                                <img src="co_amex.png" alt="American Express" />
+                            </label>
+                            <label class="cardLabel">
+                                <input name="credit" value="discover" type="radio" />
+                                <img src="co_discover.png" alt="Discover" />
+                            </label>
+                            <label class="cardLabel">
+                                <input name="credit" value="master" type="radio" />
+                                <img src="co_master.png" alt="MasterCard" />
+                            </label>
+                            <label class="cardLabel">
+                                <input name="credit" value="visa" type="radio" />
+                                <img src="co_visa.png" alt="Visa" />
+                            </label>
+                        </fieldset>
+                        <label for="cardNumber">Credit Card Number*</label>
+                        <input name="cardNumber" id="cardNumber" required type="text"
+                            pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
 
-            <label for="expMonth">Expiration Date*</label>
-            <select id="expMonth" name="expMonth">
-                    <option value="mm">mm</option>
-                    <option value="01">01</option>
-                    <option value="01">02</option>
-                    <option value="01">03</option>
-                    <option value="01">04</option>
-                    <option value="01">05</option>
-                    <option value="01">06</option>
-                    <option value="01">07</option>
-                    <option value="01">08</option>
-                    <option value="01">09</option>
-                    <option value="01">10</option>
-                    <option value="01">11</option>
-                    <option value="01">12</option>
-                </select>
-                <span> / </span>
-                <select id="expYear" name="expYear">
-                    <option value="yy">yy</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
+                        <label for="expMonth">Expiration Date*</label>
+                        <select id="expMonth" name="expMonth">
+                            <option value="mm">mm</option>
+                            <option value="01">01</option>
+                            <option value="01">02</option>
+                            <option value="01">03</option>
+                            <option value="01">04</option>
+                            <option value="01">05</option>
+                            <option value="01">06</option>
+                            <option value="01">07</option>
+                            <option value="01">08</option>
+                            <option value="01">09</option>
+                            <option value="01">10</option>
+                            <option value="01">11</option>
+                            <option value="01">12</option>
+                        </select>
+                        <span> / </span>
+                        <select id="expYear" name="expYear">
+                            <option value="yy">yy</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
 
-                    <label for="cvc">CVC*</label>
-                    <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text" />
-            </fieldset>
-                <p id="footnote">* = Required Item</p>
+                        <label for="cvc">CVC*</label>
+                        <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text" />
+                    </fieldset>
+                    <p id="footnote">* = Required Item</p>
                     <input type="submit" id="subButton" value="Submit Payment" />
-        </form>
-    </section>
-    <p id="map"><iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13301.462440686624!2d-112.29593221918822!3d33.54387592620834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4108400a3e5d%3A0x50c6a8eb637d8a1d!2sGlen+Harbor%2C+Glendale%2C+AZ+85307!5e0!3m2!1sen!2sus!4v1556657206030!5m2!1sen!2sus"
-        width="600" height="225" frameborder="1" style="border:4" allowfullscreen></iframe></p>
+                </form>
+            </section>
+            <p id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.670753034694!2d-112.29502798481998!3d33.53594495220785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b41040872b1bf%3A0x2269ad1f45a52cf!2sWest-MEC+Central+Campus!5e0!3m2!1sen!2sus!4v1557264719411!5m2!1sen!2sus" width="1230" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </p>
             <script src="paymentForm.js" defer></script>
-        </body>
+
+            <footer>
+                <div>
+                    <p id="title">
+                       <strong> CONTACT </strong>
+                    </p>
+                    <p>
+                           <strong> Robert Chambers </strong>
+                        </p>
+                        <p>Email:
+                            <a href="mailto:robert.chambers@west-mec.org">robert.chambers@west-mec.org</a>
+                        </p>
+                    <p>
+                        _____________________________
+                    </p>
+
+                    <p>
+                        Western Maricopa Education Center #402
+                    </p>
+                    <p>
+                        5487 N. 99th Ave, Glendale, AZ 85305
+                    </p>
+                    <p>
+                        <a href="tel:6237380022">623.738.0022</a>
+                    </p>
+                    
+                </div>
+            </footer>
+</body>
+
 </html>
