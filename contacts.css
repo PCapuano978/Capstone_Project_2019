@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200');
+@font-face {
+
+    font-family: largeFont;
+    src: url(NunitoSans-Regular.ttf);
+
+}
 body {
     margin: 0;
 }
@@ -191,3 +197,149 @@ footer {
      color: white;
   }
   
+
+
+
+body section {
+
+    margin: 1in;
+
+}
+
+header {
+
+    font-family: largeFont;
+
+}
+
+div img {
+
+    width: 20%; 
+
+}
+
+/* ul#nav {
+    background-color: #F39323;
+    width: 100%;
+    font-size: 14px;
+    padding: 2em;
+    word-spacing: 10em;
+
+} */
+
+ul#nav {
+    margin: 20px 60px;
+}
+
+ul#nav li {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin: 5px 1px 0 0;
+    text-indent: 35px;
+    position: relative;
+}
+
+ul#nav li:before {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -2px;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #fff;
+    z-index: 0;
+}
+
+ul#nav li:first-child:before {
+    border-color: transparent;
+}
+
+ul#nav li a:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -15px;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #ccc;
+    z-index: 10;
+}
+
+ul#nav li.active a {
+    background: orange;
+    z-index: 100;
+}
+
+ul#nav li.active a:after {
+    border-left-color: orange;
+}
+
+ul#nav li a {
+    display: block;
+    background: #ccc;
+}
+
+ul#nav li a:hover {
+    background: pink;
+}
+
+ul#nav li a:hover:after {
+    border-color: transparent transparent transparent pink; 
+}
+
+/* ul#nav a { 
+    margin: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 13px 10px;
+}
+
+ul#nav a#word {
+    word-spacing: 1.5px;
+}
+
+nav>ul#nav>li {
+    padding: 20px 16px;
+    display: inline;
+
+}
+
+ul#imageSlide li {
+
+    display: inline;
+
+}
+
+ul#imageslide {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+
+ul li img {
+
+    height: 19em;
+    text-align: center;
+
+} */
+
+body h1 {
+
+    font-size: 3em;
+    padding: .5em;
+    font-family: largeFont;
+
+}
+
+h1 img {
+
+    width: 3%;
+
+}
