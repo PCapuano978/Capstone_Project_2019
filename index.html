@@ -9,114 +9,139 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="02. Arrows Orange Gradient.png">
 
+    <!-- The head section here establishes many attributes of the displayed page without the text itself being displayed directly. These include the metadata, the title and title image of the webpage, the viewport for responsive design and a link to the index stylesheet used to apply all styles that impact this page's output. -->
+
 </head>
 
 <body>
 
-    <header>
+    <header id="index">
 
         <div>
 
-            <a  id="icon" href="#"><img src="header_icon.gif" alt="" /></a>
+            <a id="icon" href="#"><img src="header_icon.gif" alt="" /></a>
+
+            <!-- The header icon which is to be seen only in mobile mode is placed here. -->
 
             <ul>
-                    <li><a href="#index">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                   <li><a href="#">CTSO</a></li>
-          </ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">CTSO</a></li>
+            </ul>
+
+            <!-- Along with the icon is the nav list, identical to its desktop counterpart, to also be displayed when the icon is tapped. -->
 
             <img id="avionics" src="06. AvionicsDrone Electronics.png" alt="">
 
             <img id="logo" src="07_WM-Logo-Grey.png" alt="">
 
+            <!-- The West-Mec branded Avionics/Drone Electronics as well as campus logo are also set to appear aside each other at the top of the page. -->
+
         </div>
 
     </header>
 
-        <nav>
+    <nav>
 
-            <ul id="nav">
+        <ul id="nav">
 
-                <li>
-                    <a href="#index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#about.html">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        CTSO
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <li>
+                <a href="#index">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="ctso.html">
+                    CTSO
+                </a>
+            </li>
 
-        <hr>
+            <!-- The main navigation bar for the site to allow users to just between each section of the website via nav links. This is the one that is displayed on desktop devices.  -->
 
-        <section>
+        </ul>
+    </nav>
 
-            <ul id="imageSlide">
+    <hr>
 
-                <li><img id="main" src="02. AvionicsDrone Electronics.JPG" alt=""></li>
-                <div id="left">Avionics</div>
-                <li><img src="07. AvionicsDrone Electronics.JPG" alt=""></li>
-                <div id="middle">Drone Electronics</div> 
-                <li><img src="01. AvionicsDrone Electronics.JPG" alt=""></li>
-                <div id="right">West-MEC</div>
+    <!-- This <hr> tag is used to seperate these two contrasting sections of the page for better flow. -->
 
-            </ul>
+    <section>
 
-        </section>
+        <ul id="imageSlide">
 
-        <hr> 
+            <li><img id="main" src="02. AvionicsDrone Electronics.JPG" alt=""></li>
+            <div id="left">Avionics</div>
+            <li><img src="07. AvionicsDrone Electronics.JPG" alt=""></li>
+            <div id="middle">Drone Electronics</div>
+            <li><img src="01. AvionicsDrone Electronics.JPG" alt=""></li>
+            <div id="right">West-MEC</div>
 
-        <article id="about">
+            <!-- A stylish Avionics image slide shown under the navigation bar that with the linked CSS page appears grayscale with each of the div lines inside the tops of the images. -->
 
-            <h1> <img src="02. Arrows Orange Gradient.png" alt="">About Us</h1>
+        </ul>
 
-           
+    </section>
 
-            <p> 
+    <hr>
 
-                    <figure>
-                            <img src="Robert Chambers_2.jpg" alt="">
-                
-                            <figcaption>
-                                Our Avionics/Drone Electronics Instructior, <strong>Robert Chambers</strong>.
-                            </figcaption>
-                
-                        </figure>
-                
-                <p id="inception"> <strong> <em>Avionics</em> </strong>/<strong> <em>Drone Electronics</em> </strong> is a program spanning
+    <!-- Another <hr> added for added flair in dividing up the page sections. -->
+
+    <article id="about">
+
+        <h1> <img src="02. Arrows Orange Gradient.png" alt="">About Us</h1>
+
+        <!-- The about section starts here with an id nessasary to have the nav link direct the user to this section of the page and a West-Mec arrow icon for extra brand placement within the document. -->
+
+        <p>
+
+            <figure>
+                <img src="Robert Chambers_2.jpg" alt="">
+
+                <!-- Starting of this about section's paragraph is an image of the Avionics/Drone Electronics instructor Robert Chambers to the side of this article tag. -->
+
+                <figcaption>
+                    Our Avionics/Drone Electronics Instructior, <strong>Robert Chambers</strong>.
+                </figcaption>
+
+                <!-- In addition, a caption is also supplied to further describe Mr. Chambers for any newcomers on this information.  -->
+
+            </figure>
+
+            <p id="inception"> <strong> <em>Avionics</em> </strong>/<strong> <em>Drone Electronics</em> </strong> is a
+                program spanning
                 two years that is expertly designed to educate students on electronics in relation to avionics. Students
-                will greatly enhance their knowledge on <em>installation, troubleshooting, system integration and avionics operating systems,
-                including GPS systems, autopilot, communication systems, and weather radar</em> when taking this program.
+                will greatly enhance their knowledge on <em>installation, troubleshooting, system integration and
+                    avionics operating systems,
+                    including GPS systems, autopilot, communication systems, and weather radar</em> when taking this
+                program.
 
-                    <br>
-                    <br>
+                <br>
+                <br>
 
-                West-MEC prepares students to seek one or more <strong>industry certification</strong> or licensure in their
-                    field of study, providing a pathway to economic independence. </p>
-                
-                </p>
+                West-MEC prepares students to seek one or more <strong>industry certification</strong> or licensure in
+                their
+                field of study, providing a pathway to economic independence. </p>
 
-                    
-    
-        </article>
+        </p>
 
-        <hr> 
+        <!-- The whole about text is here with a bunch of styles added ontop of its linked ones. It's also given the "inception" tag to make it easier to target within said stylesheet. -->
 
-      <footer>
+    </article>
+
+    <hr>
+
+    <footer>
 
         <p>
 
@@ -124,8 +149,10 @@
 
         </p>
 
+        <!-- Ending off the page, like the rest, is this footer copyrighting the West-Mec brand with the following slogan of "A Faster Way Forward", a reference to the productive nature it strives to inject into its students, notably, at a young age.  -->
 
-      </footer>
+
+    </footer>
 
 
 </body>
