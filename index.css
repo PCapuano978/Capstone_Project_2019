@@ -210,14 +210,15 @@ article h1 {
     font-family: largeFont;
     font-size: 3em;
     text-shadow: -1px -1px white;
-    margin-right: 10em;
     text-decoration: underline;
+    margin-right: 25%;
+    clear: right;
 
 }
 
 h1 img {
 
-    width: 4%;
+    width: 1em;
 
 }
 
@@ -228,6 +229,7 @@ article figure img {
     border: black 2px solid;
     width: 30%;
     margin-left: 2em;
+    margin-top: 6em;
     border-radius: .5em;
 
 }
@@ -245,6 +247,8 @@ figure figcaption {
     content: "";
     display: table;
     border-radius: .25em;
+    margin-left: 2em;
+    width: 30%;
 
 }
 
@@ -253,7 +257,6 @@ article p#inception {
     z-index: 100;
     background: white;
     border: 2px solid black;
-    content: "";
     display: table;
     margin: 0 1em 0 1em;
     border-radius: .25em;
@@ -395,6 +398,30 @@ footer p {
     section ul#imageSlide div#right {
 
         display: none;
+
+    }
+
+    article h1 {
+
+        margin-right: 0em;
+
+    }
+
+    article figure img {
+
+        display: none;
+
+    }
+
+    figure figcaption {
+
+        display: none;
+
+    }
+
+    article p#inception {
+
+        font-size: 1.5em;
 
     }
 
