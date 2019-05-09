@@ -291,31 +291,31 @@ h1 img {
 /* .color0 is in Example 2 CSS further below */
 .color1{
     z-index: 50;
-    background-color: DodgerBlue;
+    background-color: #F39323;
     border: 1px solid black;
     margin-left: -100px;
 }
 .color2{
     z-index: 40;
-    background-color: purple;
+    background-color: #F39323;
     border: 1px solid black;
     margin-left: -100px;
 }
 .color3{
     z-index: 30;
-    background-color: DarkGreen;
+    background-color: #F39323;
     border: 1px solid black;
     margin-left: -100px;
 }
 .color4{
     z-index: 20;
-    background-color: brown;
+    background-color: #F39323;
     border: 1px solid black;
     margin-left: -100px;
 }
 .color5{
     z-index: 10;               /* Technically most bottom breadcrumb "Demo!" does not require z-index but this is used in Example 2 which is not most bottom. */
-    background-color: orange;
+    background-color: #F39323;
     border: 1px solid black;
     margin-left: -100px;
 }
@@ -350,12 +350,18 @@ h1 img {
 
 /* The arrow color will change during hover over. */
 #arrowBar1 a .AB1rotate:hover{
-    background-color: lime;
+    background-color: #F39323;
     color: black;
 }
 
+#arrowBar2 {
+    width: 80%;
+}
 
-
+#arrowBar2 a {
+color: black;
+font-family: 'Nunito Sans', sans-serif;
+}
 
 /* Example 2 will use some of the above rules and these key CSS rules below */
 
@@ -366,8 +372,8 @@ h1 img {
    margin-left: 350px;
 }
 #breadcrumbNav2{      /* Position breadcrumbNav1 on webpage relative to other objects */
-    margin-top: 0px;
-    margin-left: 45px;
+    margin-top: 25px;
+    margin-left: 325px;
 }
 #arrowBar2{
    display: inline-block;
@@ -391,7 +397,7 @@ h1 img {
 }
 .color0{
     z-index: 60;
-    background-color: grey;
+    background-color: #F39323;
     border: 1px solid black;
     /* This negative margin-left value will indirectly affect the width for "Welcome" breadcrumb. */
     /* This value when changed will require that #arrowBar2 width is adjusted too. */
@@ -400,7 +406,7 @@ h1 img {
     margin-left: -120px;
 }
 .color6{                        /* The border attribute is not required here. Also no z-index required here for most "bottom level" crumb. */
-    background-color: teal;    
+    background-color: #F39323;    
     /* .color6 is similar to .color0arrowTail in that a custom width is done for the 1st and last breadcrumbs. NOTE: #arrowBar2 minimum width via calculation is required. */
     /* Example: Change -100px to -70px below. Since the different is -30px, add that to #arrowBar2 width as positive value. Result: 762px and last breadcrumb is LONGER. */   
     margin-left: -100px;
@@ -470,6 +476,6 @@ h1 img {
     left: 70px;
 }
 #arrowBar2 a .AB2rotate:hover{   /* The breadcrumbs are hightlighted Yellow during mouseover. */
-    background-color: #ffff00;
+    background-color: white;
     color: black;
 }
