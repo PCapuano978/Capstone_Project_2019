@@ -23,7 +23,7 @@ p#map {
     margin-top: -30px;
 }
 
-ul, ol {
+/* ul, ol {
     list-style: none;
  }
  
@@ -35,7 +35,7 @@ ul, ol {
  nav a {
     text-decoration: none;
     line-height: 1.2em;
- }
+ } */
  
  textarea {
      resize: none;
@@ -218,78 +218,6 @@ div img {
 
 }
 
-/* ul#nav {
-    background-color: #F39323;
-    width: 100%;
-    font-size: 14px;
-    padding: 2em;
-    word-spacing: 10em;
-
-} */
-
-ul#nav {
-    margin: 20px 60px;
-}
-
-ul#nav li {
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    width: 100px;
-    margin: 5px 1px 0 0;
-    text-indent: 35px;
-    position: relative;
-}
-
-ul#nav li:before {
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    left: -2px;
-    border-style: solid;
-    border-width: 15px 0 15px 15px;
-    border-color: transparent transparent transparent #fff;
-    z-index: 0;
-}
-
-ul#nav li:first-child:before {
-    border-color: transparent;
-}
-
-ul#nav li a:after {
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    right: -15px;
-    border-style: solid;
-    border-width: 15px 0 15px 15px;
-    border-color: transparent transparent transparent #ccc;
-    z-index: 10;
-}
-
-ul#nav li.active a {
-    background: orange;
-    z-index: 100;
-}
-
-ul#nav li.active a:after {
-    border-left-color: orange;
-}
-
-ul#nav li a {
-    display: block;
-    background: #ccc;
-}
-
-ul#nav li a:hover {
-    background: pink;
-}
-
-ul#nav li a:hover:after {
-    border-color: transparent transparent transparent pink; 
-}
 
 /* ul#nav a { 
     margin: 5em;
@@ -342,4 +270,206 @@ h1 img {
 
     width: 3%;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .color0 is in Example 2 CSS further below */
+.color1{
+    z-index: 50;
+    background-color: DodgerBlue;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color2{
+    z-index: 40;
+    background-color: purple;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color3{
+    z-index: 30;
+    background-color: DarkGreen;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color4{
+    z-index: 20;
+    background-color: brown;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color5{
+    z-index: 10;               /* Technically most bottom breadcrumb "Demo!" does not require z-index but this is used in Example 2 which is not most bottom. */
+    background-color: orange;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+
+
+.AB1text1{                  /* Happy */
+    position: absolute;
+    top: 120px;
+    left: 72px;
+}
+.AB1text2{                  /* Breadcrumb */
+    position: absolute;
+    top: 120px;
+    left: 57px;
+}
+.AB1text3{                  /* Arrow */
+    position: absolute;
+    top: 120px;
+    left: 72px;
+}
+.AB1text4{                  /* NavBAR's */
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB1text5{                  /* Demo! */
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+
+
+/* The arrow color will change during hover over. */
+#arrowBar1 a .AB1rotate:hover{
+    background-color: lime;
+    color: black;
+}
+
+
+
+
+/* Example 2 will use some of the above rules and these key CSS rules below */
+
+
+
+
+#results2{
+   margin-left: 350px;
+}
+#breadcrumbNav2{      /* Position breadcrumbNav1 on webpage relative to other objects */
+    margin-top: 0px;
+    margin-left: 45px;
+}
+#arrowBar2{
+   display: inline-block;
+   overflow: hidden;
+   /* Rotate angle affects everything. This width is for .AB2rotate that has 45deg. */
+   /* Calculating width is not complicated, but there is one tedious step. */
+   /* First use very large value like 1000px to make sure #arrowBar1 shows every breadcrumb. */
+   /* Value1: Adjust .color0 margin-left to negative value below. This indirectly affects width(border is included) for "Wonderful" breadcrumb. Example: -120px.*/
+   /* Tedious step: Take screen shot and with image editor measure two distances on a "full crumb arrow" that you see. */
+   /* Value2 from Measurement 1: Center Crumb Tail to Tip: Start from Crumb "butt" (inside arrow border) to Crumb "tip" (with border). Example: 106px */
+   /* Value3 from Measurement 2: Last Crumb No Tip: Start from Crumb "butt" (inside arrow border) to Crumb "shoulder" (NO borders, stay inside). Example: 82px */
+   /* Now treat all Values as positive numbers and add them to get the width required for this #arrowBar2 */
+   /* Example: 120 + (106 x 5 ) + 82 = 732 */
+   /* To be sure, the number 5 above is for 5 full Crumb arrows in #arrowBar1 */
+   /* Although this is a tedious process, it creates a pixel perfect width container! */
+   width: 732px;
+   height: 50px;
+   border: 1px solid #000000;   /* Unlike above Exampe l, #arrowBar2 will have border fully applied */
+   /* For development work, use background-color to insure #arrowBar2 does NOT show RED. If it shows Red, the area will not receive .click() or hover event. */
+   /* background-color: #ff0000; */
+}
+.color0{
+    z-index: 60;
+    background-color: grey;
+    border: 1px solid black;
+    /* This negative margin-left value will indirectly affect the width for "Welcome" breadcrumb. */
+    /* This value when changed will require that #arrowBar2 width is adjusted too. */
+    /* When this value is 0px, then "Wonderful" breadcrumb is really long at 244px width. */
+    /* Demo default value of -120px shows nice balance with AB2rotate width of 200px. Simply try different values for longer/shorter word requirements. */
+    margin-left: -120px;
+}
+.color6{                        /* The border attribute is not required here. Also no z-index required here for most "bottom level" crumb. */
+    background-color: teal;    
+    /* .color6 is similar to .color0arrowTail in that a custom width is done for the 1st and last breadcrumbs. NOTE: #arrowBar2 minimum width via calculation is required. */
+    /* Example: Change -100px to -70px below. Since the different is -30px, add that to #arrowBar2 width as positive value. Result: 762px and last breadcrumb is LONGER. */   
+    margin-left: -100px;
+}
+
+/* This rotate is for Example 2 */
+.AB2rotate {
+    position: relative;
+    display: inline-block;
+    top: -75px;
+    width: 200px;
+    height: 200px;
+
+  /* Cross browser CSS3 Rotate Rules from: CSS3 Please! */
+  -webkit-transform: rotate(45deg);  /* Saf3.1+, Chrome */
+     -moz-transform: rotate(45deg);  /* FF3.5+ */
+      -ms-transform: rotate(45deg);  /* IE9 */
+       -o-transform: rotate(45deg);  /* Opera 10.5 */
+          transform: rotate(45deg);
+}
+
+/* This rotate reset for inner content is for Example 2 */
+.AB2rotateReset {
+    display: inline-block;
+
+  /* Cross browser CSS3 Rotate Rules from: CSS3 Please! */
+  -webkit-transform: rotate(-45deg);  /* Saf3.1+, Chrome */
+     -moz-transform: rotate(-45deg);  /* FF3.5+ */
+      -ms-transform: rotate(-45deg);  /* IE9 */
+       -o-transform: rotate(-45deg);  /* Opera 10.5 */
+          transform: rotate(-45deg);
+}
+
+.AB2text0{                  /* Wonderful */
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB2text1{                  /* CSS3 */
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+.AB2text2{                  /* Accessibility */
+    position: absolute;
+    top: 119px;
+    left: 58px;
+}
+.AB2text3{                  /* Breadcrumb */
+    position: absolute;
+    top: 119px;
+    left: 57px;
+}
+.AB2text4{                  /* NavBAR's */
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB2text5{                  /* For */
+    position: absolute;
+    top: 119px;
+    left: 80px;
+}
+.AB2text6{                  /* You! */
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+#arrowBar2 a .AB2rotate:hover{   /* The breadcrumbs are hightlighted Yellow during mouseover. */
+    background-color: #ffff00;
+    color: black;
 }
