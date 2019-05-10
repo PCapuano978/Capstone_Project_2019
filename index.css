@@ -13,17 +13,19 @@
 
 }
 
+/* Already into this stylesheet, we have the charset decleration, similar to this page's HTML conterpart, while in addition, having a fontface to add in custom fonts as options for the "font family" style. These three fonts in particular where taken off the West-Mec brand site for consistency in how the appeareance in this page matches up with other West-Mec related sites.  */
+
 * {
 
-position: relative;
-box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
 
 }
 
 html {
 
-background-image: linear-gradient(to right, rgb(255, 150, 65), rgb(197, 197, 197));
-min-height: 100%;
+    background-image: linear-gradient(to right, rgb(255, 180, 119), rgb(197, 197, 197));
+    min-height: 100%;
 
 }
 
@@ -85,7 +87,7 @@ ul#nav li a {
     color: gray;
     text-decoration: none;
     font-weight: bold;
-    text-shadow:  rgb(0, 0, 0) 1px 1px;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
 
 }
 
@@ -119,7 +121,7 @@ ul#imageSlide {
     list-style: none;
     margin: 0 auto;
     text-align: center;
-    color: linear-gradient(to right, red , yellow);
+    color: linear-gradient(to right, red, yellow);
     filter: grayscale();
     z-index: 2;
 
@@ -145,9 +147,9 @@ section ul#imageSlide div#left {
     font-family: lightFont;
     top: 0%;
     right: 68%;
-    font-size: 2em;   
+    font-size: 2em;
     text-shadow: -1px -1px black;
-    
+
 }
 
 section ul#imageSlide div#middle {
@@ -159,9 +161,9 @@ section ul#imageSlide div#middle {
     font-family: lightFont;
     top: 2%;
     right: 34%;
-    font-size: 1.6em;   
+    font-size: 1.6em;
     text-shadow: -1px -1px black;
-    
+
 }
 
 section ul#imageSlide div#right {
@@ -173,9 +175,9 @@ section ul#imageSlide div#right {
     font-family: lightFont;
     top: 0%;
     right: 1%;
-    font-size: 2em;   
+    font-size: 2em;
     text-shadow: -1px -1px black;
-    
+
 }
 
 body h1 {
@@ -201,6 +203,75 @@ hr {
     border-color: black;
     width: 50%;
     height: 3px;
+
+}
+
+article h1 {
+
+    float: left;
+    font-family: largeFont;
+    font-size: 3em;
+    text-shadow: -1px -1px white;
+    text-decoration: underline;
+    margin-right: 25%;
+    clear: right;
+
+}
+
+h1 img {
+
+    width: 1em;
+
+}
+
+article figure img {
+
+    z-index: 101;
+    float: right;
+    border: black 2px solid;
+    width: 30%;
+    margin-left: 2em;
+    margin-top: 6em;
+    border-radius: .5em;
+
+}
+
+figure figcaption {
+
+    clear: both;
+    float: right;
+    font-size: 1em;
+    kerning: 1.2em;
+    font-family: lightFont;
+    padding: .5em;
+    background: white;
+    border: 2px solid black;
+    content: "";
+    display: table;
+    border-radius: .25em;
+    margin-left: 2em;
+    width: 30%;
+
+}
+
+article p#inception {
+
+    z-index: 100;
+    background: white;
+    border: 2px solid black;
+    display: table;
+    margin: 0 1em 0 1em;
+    border-radius: .25em;
+
+}
+
+p#inception {
+
+    font-size: 1.8em;
+    kerning: 1.2em;
+    font-family: lightFont;
+    text-shadow: rgb(255, 180, 119) -1px -1px;
+    padding: .5em;
 
 }
 
@@ -250,7 +321,8 @@ footer p {
 
     }
 
-    div a#icon:hover+ul, header div ul:hover {
+    div a#icon:hover+ul,
+    header div ul:hover {
 
         display: block;
 
@@ -276,15 +348,15 @@ footer p {
         text-shadow: rgb(0, 0, 0) 1px 1px;
         list-style: none;
         float: left;
-    
+
     }
-    
+
     ul#nav li a:hover {
-    
+
         color: black;
         text-decoration: underline;
         text-shadow: rgb(255, 255, 255) 1px 1px;
-    
+
     }
 
     ul#nav {
@@ -329,6 +401,30 @@ footer p {
     section ul#imageSlide div#right {
 
         display: none;
+
+    }
+
+    article h1 {
+
+        margin-right: 0em;
+
+    }
+
+    article figure img {
+
+        display: none;
+
+    }
+
+    figure figcaption {
+
+        display: none;
+
+    }
+
+    article p#inception {
+
+        font-size: 1.5em;
 
     }
 
