@@ -22,6 +22,8 @@
 
 }
 
+/* Every single item within the document's content has their position set to reletive while the box-sizing is made into the border box model. */
+
 html {
 
     background-image: linear-gradient(to right, rgb(255, 180, 119), rgb(197, 197, 197));
@@ -29,17 +31,23 @@ html {
 
 }
 
+/* All nested elements within the htiml tags are to have a background graident that is light orange moving over to the right as a shade of gray and will have the entire display be a minial height containing the whole page. */
+
 body {
 
     margin: 0;
 
 }
 
+/* All the body contents are set to have no margins on every side. */
+
 header {
 
     font-family: largeFont;
 
 }
+
+/* The header area is set to have the arge West-Mec branded font established at the top of the page in the font-face. */
 
 div img#avionics {
 
@@ -48,6 +56,8 @@ div img#avionics {
 
 }
 
+/* The avionics logo within the div element is given a width of exactly twenty three percent and a margin of point five on all sides. */
+
 div img#logo {
 
     margin: 0 0 1em 3em;
@@ -55,19 +65,23 @@ div img#logo {
 
 }
 
+/* The West-Mec logo is then given a bottom and left margin of one and three respectively of em units and has an overall width of twenty seven percent. */
+
 div a#icon img {
 
     display: none;
 
 }
 
+/* The header icon that is designed for mobile usage is given a default display of none, removing it from the page. */
+
 header div ul {
 
     display: none;
-    padding: 0;
-    margin: 0;
 
 }
+
+/* The header links within the header icon are also given the same treatment of being made invisible by default.  */
 
 ul#nav {
 
@@ -78,6 +92,14 @@ ul#nav {
     justify-content: space-around;
 
 }
+
+/* The standard navigation tab in the desktop mode...
+is set to a width of 100%,
+has one em of padding on each side,
+has the default list styles disabled,
+is given a dsiplay of flex,
+and is centered within the content around it.
+*/
 
 ul#nav li a {
 
@@ -91,6 +113,16 @@ ul#nav li a {
 
 }
 
+/* Alternatively, the links themselves within the nvaigation tab,
+ have a found size of two point five em,
+ set their spacing of words inbewteen to five em,
+ are given the West-Mec branded lighter font,
+ have text color of gray,
+ no text decartion applied,
+ are given a bold font-weight,
+ and are finally posessing one pixel offset black text shadows.
+*/
+
 ul#nav li a:hover {
 
     color: black;
@@ -99,6 +131,7 @@ ul#nav li a:hover {
 
 }
 
+/* When the nav links are hovered over, their color will change to black with a blac underline and a white, one pixel offset shadow. */
 
 nav>ul#nav>li {
 
@@ -106,11 +139,15 @@ nav>ul#nav>li {
 
 }
 
+/* All list items within the naviagation tab are also set to a display of inline. */
+
 section {
 
-    border: black 2 solid;
+    border: black 2px solid;
 
 }
+
+/* The section tab has been given a black, two pixel, solid border as well. (in case you couldn't read that...) */
 
 ul#imageSlide {
 
@@ -121,11 +158,21 @@ ul#imageSlide {
     list-style: none;
     margin: 0 auto;
     text-align: center;
-    color: linear-gradient(to right, red, yellow);
     filter: grayscale();
     z-index: 2;
 
 }
+
+/* The images that appear side by side of each other have the following styles:
+No padding,
+100% width and height,
+a display of block,
+no list-styles,
+an automatic horizonal margin with none verticle,
+text alinged to the center,
+the color of them being grayscaled,
+and finally, a z-index of two to be important with the text overlap.
+*/
 
 section ul#imageSlide img {
 
@@ -137,6 +184,15 @@ section ul#imageSlide img {
     max-width: 33.33%;
 
 }
+
+/* The images directly in the container now will have...
+no padding,
+be floated to the left,
+their content set to an empty string,
+a three pixel solid orange border,
+automatic height,
+and maximum width of a third of a percent for each.
+*/
 
 section ul#imageSlide div#left {
 
@@ -152,6 +208,18 @@ section ul#imageSlide div#left {
 
 }
 
+/* Now text that is to appear in the *left* image slide are given the followung styles: 
+a z-index position of three,
+automatic horizontal margins with no vertical ones,
+a position of absolute,
+a color of white,
+the West-Mec branded lighter font,
+top ppostioning of zero percent,
+right positioning of sixty eight percent,
+font size of two em,
+and a black offset text shadow of negative one.
+*/
+
 section ul#imageSlide div#middle {
 
     z-index: 3;
@@ -165,6 +233,8 @@ section ul#imageSlide div#middle {
     text-shadow: -1px -1px black;
 
 }
+
+/* For the middle text contnet, code is almost identical, but the em and positioning are different. */
 
 section ul#imageSlide div#right {
 
@@ -180,6 +250,8 @@ section ul#imageSlide div#right {
 
 }
 
+/* And the same applies to the right one as well. */
+
 body h1 {
 
     font-size: 3em;
@@ -188,12 +260,16 @@ body h1 {
 
 }
 
+/* The h1 style will have a font size of three em, padding of of one and two em verticly and horiontally respectively, and large West-Mec branded font. */
+
 section h1 img {
 
     width: 3%;
     clear: both;
 
 }
+
+/* The image within the heading will have three percent for it's width and clear both sides of floated content near it. */
 
 hr {
 
@@ -205,6 +281,15 @@ hr {
     height: 3px;
 
 }
+
+/* The scattered horizontal lines throughout the page that divide content will have...
+a display of inline-block,
+margins of point five em,
+a left margin that is 25% of its width,
+a border color of black,
+its total width take up 50% of the space it has,
+and a height of three pixels,
+ */
 
 article h1 {
 
@@ -218,11 +303,22 @@ article h1 {
 
 }
 
+/* The h1 tag in the article will now be...
+floated left,
+have large West-Mec branded font,
+a font-size of three em,
+a white text shadow offseted by negative one pxiel,
+a text decoration of being underlined,
+a right margin that's a qauter of the space aviliable,
+and have the right side clear of floated content. */
+
 h1 img {
 
     width: 1em;
 
 }
+
+/* The image in the h1 will have a width of on em */
 
 article figure img {
 
@@ -235,6 +331,16 @@ article figure img {
     border-radius: .5em;
 
 }
+
+/* The figure image...
+will a a z-index positon of one hundred and one,
+be floated to the right,
+given a solid black border that is two pixels long,
+width od thirty pixels,
+a left margin that's two em long,
+a top margin that's ix em long,
+and rounded corners that are a border radius of point five em long.
+ */
 
 figure figcaption {
 
@@ -254,6 +360,22 @@ figure figcaption {
 
 }
 
+/* The figcaption within the figure will be set to have...
+both sides of it be cleared of floated content,
+be floated ro the right,
+have a font size of one em,
+be given text spacing of one point two em,
+have the West-Mec branded light font,
+padding around of point five,
+a background of white,
+border the is two pixels black,
+content set to an empty string,
+a display of table,
+curved corners with a border radius of pointtwenty five em,
+a left margin of two em,
+width of thirty percent.
+*/
+
 article p#inception {
 
     z-index: 100;
@@ -265,6 +387,14 @@ article p#inception {
 
 }
 
+/* The paragraph in the article with the "inception" tag are given...
+a z-index positiong of one hundred,
+a white background,
+two pixel sold black borders,
+a display of table,
+margins that are zero on the top and bottom while being one em on the sides,
+and curved corners through a border radius of point twenty five em. */
+
 p#inception {
 
     font-size: 1.8em;
@@ -275,6 +405,14 @@ p#inception {
 
 }
 
+/* Targetting just the class now:
+font size will be one point eight em,
+kerning will be one point two em long,
+font family will be the light West-Mec branded one,
+text-shadow will be a shade of orange that is offset negative one pixels,
+and padding is set to point five.
+ */
+
 footer {
 
     background-color: rgb(80, 80, 80);
@@ -283,6 +421,8 @@ footer {
     border: 1px solid black;
 
 }
+
+/* The footer will have a background color that is gray, clear both sides of floated content while using up one hundred percent of the height given to it and finally will have one pixel of a solid black border. */
 
 footer p {
 
@@ -293,8 +433,11 @@ footer p {
 
 }
 
+/* The footer's text will be pne point two em big, be set to the italic West-Mec branded font, have that text ent allinged to the center and have the margins o all sides be one point five em long. */
+
 @media only screen and (max-width: 600px) {
 
+    /* For the remainder of these styles, they will only apply and overide the eixisting styles applied if the screen display is less than six hundred pixles, effectively making sure the user's device is a mobile one. */
 
     div img#avionics {
 
@@ -304,11 +447,15 @@ footer p {
 
     }
 
+    /* The abionics logo will be floated let and have a widht of thirty three percent with a left margin of five em. */
+
     div img#logo {
 
         display: none;
 
     }
+
+    /* The West-Mec logo will be removed from the display period. */
 
     div a#icon img {
 
@@ -321,12 +468,22 @@ footer p {
 
     }
 
+    /* The header icon finally will take effect by being given a display of block and...
+    having all margins be point five em long,
+    be floated to the left,
+    have a border radius of ten pixels for rounded corners,
+    have said border be solid black and one pixel long,
+    and have an overall width of twelve percent.
+     */
+
     div a#icon:hover+ul,
     header div ul:hover {
 
         display: block;
 
     }
+
+    /* Now, if the header icon or the div list within it are to be hovered over, their display will be set to block. */
 
     div ul {
 
@@ -335,6 +492,8 @@ footer p {
         justify-content: space-around;
 
     }
+
+    /* The div list now being taken into effect is removed of its list styles, also set to block and is centered with the content around it. */
 
     div ul li a {
 
@@ -351,6 +510,8 @@ footer p {
 
     }
 
+    /* The links themselves also are greatly effected, but in a very similar way to how the normal navigation tab is for desktop users. */
+
     ul#nav li a:hover {
 
         color: black;
@@ -359,13 +520,15 @@ footer p {
 
     }
 
+    /* This also includes the same styles for when it's hovered over. */
+
     ul#nav {
 
         display: none;
-        padding: 0;
-        margin: 0;
 
     }
+
+    /* Said navigation tab, however, is then removed as a result from the mobile side of the page. */
 
     section ul#imageSlide img:not(#main) {
 
@@ -373,12 +536,16 @@ footer p {
 
     }
 
+    /* Within the image slide, the two images that do *not* have the "main" ID are removed as well. */
+
     section ul#imageSlide img#main {
 
         display: block;
         min-width: 100%;
 
     }
+
+    /* The existing, main one hover is given a display of block and a minimum width changed to one hundred percent of its space now. */
 
     section ul#imageSlide div#left {
 
@@ -389,6 +556,8 @@ footer p {
 
     }
 
+    /* The left overlay text for the image slide is positioned differently with a larger size on the top left of the only image. */
+
     section ul#imageSlide div#middle {
 
         position: absolute;
@@ -398,11 +567,15 @@ footer p {
 
     }
 
+    /* A similar thing is then done with the middle one in the rop right corner.  */
+
     section ul#imageSlide div#right {
 
         display: none;
 
     }
+
+    /* However, the right one is to not be displayed at all. */
 
     article h1 {
 
@@ -410,11 +583,15 @@ footer p {
 
     }
 
+    /* The h1 element in the article no longer has any right margin. */
+
     article figure img {
 
         display: none;
 
     }
+
+    /* The figure image is removed... */
 
     figure figcaption {
 
@@ -422,16 +599,22 @@ footer p {
 
     }
 
+    /* ...alongside the caption within it. */
+
     article p#inception {
 
         font-size: 1.5em;
 
     }
 
+    /* The "inception" text is increased in size to one point five em. */
+
     footer {
 
         font-size: .75em;
 
     }
+
+    /* And the fotter has a font size of point seventy five now. */
 
 }
