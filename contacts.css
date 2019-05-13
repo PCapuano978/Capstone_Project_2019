@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200');
+@font-face {
+
+    font-family: largeFont;
+    src: url(NunitoSans-Regular.ttf);
+
+}
 body {
     margin: 0;
 }
@@ -17,7 +23,7 @@ p#map {
     margin-top: -30px;
 }
 
-ul, ol {
+/* ul, ol {
     list-style: none;
  }
  
@@ -29,7 +35,7 @@ ul, ol {
  nav a {
     text-decoration: none;
     line-height: 1.2em;
- }
+ } */
  
  textarea {
      resize: none;
@@ -191,3 +197,249 @@ footer {
      color: white;
   }
   
+
+
+
+body section {
+
+    margin: 1in;
+
+}
+
+header {
+
+    font-family: largeFont;
+
+}
+
+div img {
+
+    width: 20%; 
+
+}
+
+
+/* ul#nav a { 
+    margin: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 13px 10px;
+}
+
+ul#nav a#word {
+    word-spacing: 1.5px;
+}
+
+nav>ul#nav>li {
+    padding: 20px 16px;
+    display: inline;
+
+}
+
+ul#imageSlide li {
+
+    display: inline;
+
+}
+
+ul#imageslide {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+
+ul li img {
+
+    height: 19em;
+    text-align: center;
+
+} */
+
+body h1 {
+
+    font-size: 3em;
+    padding: .5em;
+    font-family: largeFont;
+
+}
+
+h1 img {
+
+    width: 3%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.color1{
+    z-index: 50;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color2{
+    z-index: 40;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color3{
+    z-index: 30;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color4{
+    z-index: 20;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+.color5{
+    z-index: 10;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -100px;
+}
+
+
+.AB1text1{       
+    position: absolute;
+    top: 120px;
+    left: 72px;
+}
+.AB1text2{               
+    position: absolute;
+    top: 120px;
+    left: 57px;
+}
+.AB1text3{            
+    position: absolute;
+    top: 120px;
+    left: 72px;
+}
+.AB1text4{           
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB1text5{                  
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+
+#arrowBar1 a .AB1rotate:hover{
+    background-color: #F39323;
+    color: black;
+}
+
+#arrowBar2 {
+    width: 80%;
+}
+
+#arrowBar2 a {
+color: black;
+font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+
+#results2{
+   margin-left: 350px;
+}
+#breadcrumbNav2{    
+    margin-top: 25px;
+    margin-left: 325px;
+}
+#arrowBar2{
+   display: inline-block;
+   overflow: hidden;
+   width: 732px;
+   height: 50px;
+   border: 1px solid #000000;
+}
+.color0{
+    z-index: 60;
+    background-color: #F39323;
+    border: 1px solid black;
+    margin-left: -120px;
+}
+.color6{
+    background-color: #F39323;    
+    margin-left: -100px;
+}
+
+.AB2rotate {
+    position: relative;
+    display: inline-block;
+    top: -75px;
+    width: 200px;
+    height: 200px;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.AB2rotateReset {
+    display: inline-block;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.AB2text0{
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB2text1{               
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+.AB2text2{                 
+    position: absolute;
+    top: 119px;
+    left: 58px;
+}
+.AB2text3{                  
+    position: absolute;
+    top: 119px;
+    left: 57px;
+}
+.AB2text4{               
+    position: absolute;
+    top: 119px;
+    left: 60px;
+}
+.AB2text5{            
+    position: absolute;
+    top: 119px;
+    left: 80px;
+}
+.AB2text6{               
+    position: absolute;
+    top: 119px;
+    left: 70px;
+}
+#arrowBar2 a .AB2rotate:hover{   
+    background-color: white;
+    color: black;
+}
