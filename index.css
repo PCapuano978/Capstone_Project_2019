@@ -327,8 +327,9 @@ article figure img {
     z-index: 101;
     border: black 2px solid;
     width: 30%;
-    margin-left: 2em;
     border-radius: .5em;
+    float: right;
+    margin-top: -5%;
 
 }
 
@@ -336,9 +337,9 @@ article figure img {
 will a a z-index positon of one hundred and one,
 be floated to the right,
 given a solid black border that is two pixels long,
-width od thirty pixels,
+width of thirty pixels,
 a left margin that's two em long,
-a top margin that's ix em long,
+a top margin that's negative five percent long,
 and rounded corners that are a border radius of point five em long.
  */
 
@@ -353,7 +354,7 @@ figure figcaption {
     content: "";
     display: table;
     border-radius: .25em;
-    margin-left: 2em;
+    float: right;
     width: 30%;
 
 }
@@ -374,16 +375,24 @@ a left margin of two em,
 width of thirty percent.
 */
 
+article figure#ctso img {
+
+    clear: left;
+
+}
+
+article figcaption#ctso {}
+
 article p#inception {
 
     z-index: 100;
     background: white;
     border: 2px solid black;
     display: table;
-    margin: 0 1em 0 1em;
+    margin-left: 1em;
     border-radius: .25em;
     float: left;
-    width: 62%;
+    width: 55%;
 
 }
 
@@ -392,7 +401,7 @@ a z-index positiong of one hundred,
 a white background,
 two pixel sold black borders,
 a display of table,
-margins that are zero on the top and bottom while being one em on the sides,
+margins consisting of the left one being one em long,
 and curved corners through a border radius of point twenty five em. */
 
 p#inception {
@@ -591,6 +600,7 @@ footer p {
         width: 20em;
         margin-right: 12%;
 
+
     }
 
 
@@ -606,10 +616,11 @@ footer p {
     article p#inception {
 
         font-size: 1.5em;
+        width: 90%;
 
     }
 
-    /* The "inception" text is increased in size to one point five em. */
+    /* The "inception" text is increased in size to one point five em, with the width of the entire element being ninty percent of the space occupied. */
 
     footer {
 
