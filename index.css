@@ -314,7 +314,19 @@ a text decoration of being underlined,
 a right margin that's a qaurter of the space aviliable,
 and have the right side clear of floated content. */
 
-h1 img {
+article.ctso h1 {
+
+    letter-spacing: .1em;
+
+}
+
+article.ctso h1 img {
+
+    margin-right: .2em;
+
+}
+
+article h1 img {
 
     width: 1em;
 
@@ -352,7 +364,6 @@ figure figcaption {
     background: white;
     border: 2px solid black;
     content: "";
-    display: table;
     border-radius: .25em;
     float: right;
     width: 30%;
@@ -375,13 +386,13 @@ a left margin of two em,
 width of thirty percent.
 */
 
-article figure#ctso img {
+article.ctso figure img {
 
-    clear: left;
+
+    margin-top: 0em;
+    width: 23em;
 
 }
-
-article figcaption#ctso {}
 
 article p#inception {
 
@@ -421,6 +432,12 @@ font family will be the light West-Mec branded one,
 text-shadow will be a shade of orange that is offset negative one pixels,
 and padding is set to point five.
  */
+
+article.ctso p#inception {
+
+    width: 95%;
+
+}
 
 footer {
 
@@ -469,7 +486,7 @@ footer p {
     div a#icon img {
 
         display: block;
-        margin: .5em .5em .5em .5em;
+        margin: .5em 0em .5em .5em;
         float: left;
         border-radius: 10px;
         border: black 1px solid;
@@ -507,7 +524,7 @@ footer p {
     div ul li a {
 
         font-size: 1.5em;
-        padding: .8em .4em;
+        padding: .8em .5em;
         font-family: lightFont;
         word-spacing: 1em;
         color: gray;
@@ -600,9 +617,15 @@ footer p {
         width: 20em;
         margin-right: 12%;
 
-
     }
 
+    /* The image within the article figure is given a top and right margin of zero and twelve percent respectively. The width is also set to twenty em. */
+
+    article.ctso figure img {
+
+        width: 20em;
+
+    }
 
     figure figcaption {
 
@@ -611,6 +634,8 @@ footer p {
         margin-right: 12%;
 
     }
+
+    /* The top margin is removed from the figure's caption, with a width of twenty em being adjusted along with a right margin set to twelve percent. */
 
 
     article p#inception {
